@@ -121,6 +121,21 @@ function mostrarFeedback() {
   }, 2500);
 }
 
+// Trocar tutorial Webmail/Outlook
+function trocarTutorial(tipo) {
+  var panels = document.querySelectorAll('.tutorial-panel');
+  var btns = document.querySelectorAll('.tab-btn');
+  for (var i = 0; i < panels.length; i++) {
+    panels[i].classList.remove('active');
+  }
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].classList.remove('active');
+  }
+  document.getElementById('tutorial-' + tipo).classList.add('active');
+  var idx = tipo === 'webmail' ? 0 : 1;
+  btns[idx].classList.add('active');
+}
+
 // Atualizar preview em tempo real
 campos.forEach(function(id) {
   document.getElementById(id).addEventListener('input', gerarAssinatura);

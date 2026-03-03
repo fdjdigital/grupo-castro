@@ -142,7 +142,46 @@ h2 {
 .tutorial-intro {
   font-size: 14px;
   color: #6B7280;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.tutorial-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Calibri, -apple-system, 'Segoe UI', Arial, sans-serif;
+  border: 2px solid #E8EAED;
+  border-radius: 8px;
+  background: #fff;
+  color: #6B7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover {
+  border-color: #0050c7;
+  color: #0050c7;
+}
+
+.tab-btn.active {
+  background: #0050c7;
+  border-color: #0050c7;
+  color: #fff;
+}
+
+.tutorial-panel {
+  display: none;
+}
+
+.tutorial-panel.active {
+  display: block;
 }
 
 .steps {

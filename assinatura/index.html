@@ -59,77 +59,147 @@
   <!-- TUTORIAL -->
   <section class="tutorial-section">
     <h2>3. Como configurar no seu e-mail</h2>
-    <p class="tutorial-intro">Siga o passo a passo abaixo para configurar a assinatura no Webmail da HostGator (Roundcube).</p>
+    <p class="tutorial-intro">Escolha onde voc&ecirc; acessa seu e-mail e siga o passo a passo.</p>
 
-    <div class="steps">
+    <div class="tutorial-tabs">
+      <button class="tab-btn active" onclick="trocarTutorial('webmail')">Webmail</button>
+      <button class="tab-btn" onclick="trocarTutorial('outlook')">Outlook</button>
+    </div>
 
-      <div class="step">
-        <div class="step-number">1</div>
-        <div class="step-content">
-          <h3>Acesse o Webmail</h3>
-          <p>Abra o navegador e acesse:</p>
-          <div class="code-box">https://bygrupocastro.com.br:2096</div>
-          <p>Fa&ccedil;a login com seu <strong>e-mail completo</strong> e <strong>senha</strong>.</p>
-          <p class="tip">Se aparecer op&ccedil;&atilde;o de escolha, selecione <strong>Roundcube</strong>.</p>
+    <!-- WEBMAIL (Roundcube) -->
+    <div class="tutorial-panel active" id="tutorial-webmail">
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Acesse o Webmail</h3>
+            <p>Abra o navegador e acesse:</p>
+            <div class="code-box">https://webmail.bygrupocastro.com.br</div>
+            <p>Fa&ccedil;a login com seu <strong>e-mail completo</strong> e <strong>senha</strong>.</p>
+            <p class="tip">Se aparecer op&ccedil;&atilde;o de escolha, selecione <strong>Roundcube</strong>.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Abra as Configura&ccedil;&otilde;es</h3>
+            <p>No canto superior direito, clique em <strong>Settings</strong> (ou <strong>Configura&ccedil;&otilde;es</strong>).</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>V&aacute; em Identidades</h3>
+            <p>No menu lateral esquerdo, clique em <strong>Identities</strong> (ou <strong>Identidades</strong>).</p>
+            <p>Depois clique no seu <strong>endere&ccedil;o de e-mail</strong> que aparece na lista.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Ative a assinatura HTML</h3>
+            <p>Role a p&aacute;gina at&eacute; encontrar o campo <strong>Signature</strong> (Assinatura).</p>
+            <p>Marque a op&ccedil;&atilde;o <strong>&ldquo;HTML signature&rdquo;</strong> (Assinatura HTML).</p>
+            <p class="tip">Isso &eacute; obrigat&oacute;rio para que as cores, &iacute;cones e layout funcionem.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Cole a assinatura</h3>
+            <p>Volte a esta p&aacute;gina e clique no bot&atilde;o <strong>&ldquo;Copiar Assinatura&rdquo;</strong> acima.</p>
+            <p>No Roundcube, clique dentro do campo de assinatura e cole com <strong>Ctrl+V</strong> (ou <strong>Cmd+V</strong> no Mac).</p>
+            <p class="tip">Se a assinatura n&atilde;o aparecer formatada, procure um bot&atilde;o <strong>&ldquo;Source&rdquo;</strong> ou <strong>&ldquo;&lt;/&gt;&rdquo;</strong> no editor para colar o c&oacute;digo HTML diretamente.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <h3>Salve</h3>
+            <p>Clique em <strong>Save</strong> (Salvar) no canto inferior.</p>
+            <p>Pronto! A assinatura vai aparecer automaticamente em todos os novos e-mails.</p>
+          </div>
         </div>
       </div>
 
-      <div class="step">
-        <div class="step-number">2</div>
-        <div class="step-content">
-          <h3>Abra as Configura&ccedil;&otilde;es</h3>
-          <p>No canto superior direito, clique em <strong>Settings</strong> (ou <strong>Configura&ccedil;&otilde;es</strong>).</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-number">3</div>
-        <div class="step-content">
-          <h3>V&aacute; em Identidades</h3>
-          <p>No menu lateral esquerdo, clique em <strong>Identities</strong> (ou <strong>Identidades</strong>).</p>
-          <p>Depois clique no seu <strong>endere&ccedil;o de e-mail</strong> que aparece na lista.</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-number">4</div>
-        <div class="step-content">
-          <h3>Ative a assinatura HTML</h3>
-          <p>Role a p&aacute;gina at&eacute; encontrar o campo <strong>Signature</strong> (Assinatura).</p>
-          <p>Marque a op&ccedil;&atilde;o <strong>&ldquo;HTML signature&rdquo;</strong> (Assinatura HTML).</p>
-          <p class="tip">Isso &eacute; obrigat&oacute;rio para que as cores, &iacute;cones e layout funcionem.</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-number">5</div>
-        <div class="step-content">
-          <h3>Cole a assinatura</h3>
-          <p>Volte a esta p&aacute;gina e clique no bot&atilde;o <strong>&ldquo;Copiar Assinatura&rdquo;</strong> acima.</p>
-          <p>No Roundcube, clique dentro do campo de assinatura e cole com <strong>Ctrl+V</strong> (ou <strong>Cmd+V</strong> no Mac).</p>
-          <p class="tip">Se a assinatura n&atilde;o aparecer formatada, procure um bot&atilde;o <strong>&ldquo;Source&rdquo;</strong> ou <strong>&ldquo;&lt;/&gt;&rdquo;</strong> no editor para colar o c&oacute;digo HTML diretamente.</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-number">6</div>
-        <div class="step-content">
-          <h3>Salve</h3>
-          <p>Clique em <strong>Save</strong> (Salvar) no canto inferior.</p>
-          <p>Pronto! A assinatura vai aparecer automaticamente em todos os novos e-mails.</p>
-        </div>
+      <div class="extra-tip">
+        <h3>Dica extra: Ativar composi&ccedil;&atilde;o em HTML</h3>
+        <p>Para garantir que seus e-mails sempre enviem a assinatura formatada:</p>
+        <ol>
+          <li>V&aacute; em <strong>Settings</strong> &rarr; <strong>Preferences</strong> (Prefer&ecirc;ncias) &rarr; <strong>Composing Messages</strong></li>
+          <li>Em <strong>&ldquo;Compose HTML messages&rdquo;</strong>, selecione <strong>&ldquo;always&rdquo;</strong></li>
+          <li>Clique em <strong>Save</strong></li>
+        </ol>
       </div>
 
     </div>
 
-    <div class="extra-tip">
-      <h3>Dica extra: Ativar composi&ccedil;&atilde;o em HTML</h3>
-      <p>Para garantir que seus e-mails sempre enviem a assinatura formatada:</p>
-      <ol>
-        <li>V&aacute; em <strong>Settings</strong> &rarr; <strong>Preferences</strong> (Prefer&ecirc;ncias) &rarr; <strong>Composing Messages</strong></li>
-        <li>Em <strong>&ldquo;Compose HTML messages&rdquo;</strong>, selecione <strong>&ldquo;always&rdquo;</strong></li>
-        <li>Clique em <strong>Save</strong></li>
-      </ol>
+    <!-- OUTLOOK -->
+    <div class="tutorial-panel" id="tutorial-outlook">
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Abra as Configura&ccedil;&otilde;es de Assinatura</h3>
+            <p><strong>Outlook Desktop (Windows):</strong> Clique em <strong>Arquivo</strong> &rarr; <strong>Op&ccedil;&otilde;es</strong> &rarr; <strong>Email</strong> &rarr; <strong>Assinaturas</strong>.</p>
+            <p><strong>Outlook Novo / Web:</strong> Clique na engrenagem <strong>Configura&ccedil;&otilde;es</strong> (canto superior direito) &rarr; <strong>Email</strong> &rarr; <strong>Redigir e responder</strong>.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Crie ou edite uma assinatura</h3>
+            <p><strong>Desktop:</strong> Clique em <strong>Novo</strong>, d&ecirc; um nome (ex: &ldquo;Castro&rdquo;) e clique em <strong>OK</strong>.</p>
+            <p><strong>Novo / Web:</strong> Clique em <strong>Nova assinatura</strong> e d&ecirc; um nome.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Cole a assinatura</h3>
+            <p>Volte a esta p&aacute;gina e clique no bot&atilde;o <strong>&ldquo;Copiar Assinatura&rdquo;</strong> acima.</p>
+            <p>No Outlook, clique dentro do campo de edi&ccedil;&atilde;o da assinatura e cole com <strong>Ctrl+V</strong> (ou <strong>Cmd+V</strong> no Mac).</p>
+            <p class="tip">A assinatura deve aparecer j&aacute; formatada com cores e &iacute;cones. Se aparecer s&oacute; texto, verifique se o formato est&aacute; em <strong>HTML</strong> (n&atilde;o &ldquo;Texto sem formata&ccedil;&atilde;o&rdquo;).</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Defina como padr&atilde;o</h3>
+            <p><strong>Desktop:</strong> Em <strong>&ldquo;Novas mensagens&rdquo;</strong> e <strong>&ldquo;Respostas/encaminhamentos&rdquo;</strong>, selecione a assinatura &ldquo;Castro&rdquo;.</p>
+            <p><strong>Novo / Web:</strong> Marque as op&ccedil;&otilde;es <strong>&ldquo;Incluir automaticamente em novas mensagens&rdquo;</strong> e <strong>&ldquo;Incluir automaticamente em respostas e encaminhamentos&rdquo;</strong>.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Salve</h3>
+            <p>Clique em <strong>Salvar</strong> (ou <strong>OK</strong> no Desktop).</p>
+            <p>Pronto! A assinatura vai aparecer automaticamente em todos os novos e-mails.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-tip">
+        <h3>Dica: Formato da mensagem</h3>
+        <p>Para garantir que a assinatura sempre apare&ccedil;a formatada:</p>
+        <ol>
+          <li><strong>Desktop:</strong> V&aacute; em <strong>Arquivo</strong> &rarr; <strong>Op&ccedil;&otilde;es</strong> &rarr; <strong>Email</strong> e em <strong>&ldquo;Redigir mensagens neste formato&rdquo;</strong>, selecione <strong>HTML</strong></li>
+          <li><strong>Novo / Web:</strong> Em <strong>Configura&ccedil;&otilde;es</strong> &rarr; <strong>Email</strong> &rarr; <strong>Redigir e responder</strong>, selecione <strong>HTML</strong> como formato padr&atilde;o</li>
+        </ol>
+      </div>
+
     </div>
   </section>
 
