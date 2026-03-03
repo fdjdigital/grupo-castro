@@ -1,0 +1,244 @@
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--dark);
+  font-family: "Onest";
+  margin: 0;
+  z-index: 1;
+}
+
+::selection {
+  background: var(--line);
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+  transition: .2s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*====================================================================================================
+ROOT
+====================================================================================================*/
+:root {
+  /*---------- colors ----------*/
+  --white: #ffffff;
+  --blue: #0050c7;
+  --dark-blue: #112e3f;
+  --light: #ceddeb;
+  --line: rgba(136 150 139 / 0.2);
+
+  /*---------- fonts ----------*/
+  --h1: 4rem;
+  --h2: 3rem;
+  --h3: 1.8rem;
+  --h4: 1.4rem;
+  --p: 1rem;
+  --small: 0.85rem;
+
+  /*---------- weights ----------*/
+  --strong: 600;
+  --regular: 400;
+
+  /*---------- gap ----------*/
+  --section-gap: 6rem;
+  --item-gap: 3rem;
+  --small-gap: 2rem;
+  --thin-gap: 1rem;
+}
+
+/*====================================================================================================
+FONTS
+====================================================================================================*/
+b, strong {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--h1);
+  font-weight: var(--strong);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--h2);
+  font-weight: var(--strong);
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--h3);
+  font-weight: var(--strong);
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--h4);
+  font-weight: var(--strong);
+  margin: 0;
+}
+
+p {
+  font-size: var(--p);
+  font-weight: var(--regular);
+  line-height: 1.5;
+  margin: 0;
+}
+
+small {
+  font-size: var(--small);
+  font-weight: var(--regular);
+  margin: 0;
+}
+
+/*====================================================================================================
+BUTTONS
+====================================================================================================*/
+#button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--small-gap) / 4);
+  width: -webkit-fill-available;
+  font-size: var(--small);
+  font-weight: var(--strong);
+}
+
+#button:hover {
+  transform: translateY(-0.15rem);
+}
+
+#button > #icon {
+  opacity: 0.5;
+  transition: .2s;
+}
+
+#button:hover > #icon {
+  opacity: unset;
+}
+
+.strong-button {
+  color: var(--white);
+  background: var(--blue);
+  width: 100%;
+  padding: calc(var(--small-gap) / 2) var(--small-gap);
+  border-radius: calc(var(--small-gap) * 10);
+}
+
+.alt-button {
+  color: var(--white);
+  background: transparent;
+  border: 1px solid var(--blue);
+  width: 100%;
+  padding: calc(var(--small-gap) / 2) var(--small-gap);
+  border-radius: calc(var(--small-gap) * 10);
+}
+
+/*====================================================================================================
+BUILDING BLOCKS
+====================================================================================================*/
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--section-gap);
+  height: 100vh;
+  color: var(--white);
+  background: var(--dark-blue);
+  padding: var(--item-gap) 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  max-width: 800px;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container p, .container small {
+  opacity: 0.5;
+}
+
+.ver-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--item-gap);
+  width: 100%;
+}
+
+.hor-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--item-gap);
+  width: 100%;
+}
+
+.ver-thin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: var(--thin-gap);
+}
+
+.hor-thin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--thin-gap);
+}
+
+.circle-img {
+  width: 8rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 100rem;
+  background-position: center;
+  background-size: cover;
+}
+
+#copyright {
+  display: flex;
+  gap: calc(var(--thin-gap) / 4);
+  align-items: center;
+}
+
+#copyright img {
+  opacity: unset;
+}
+
+/*====================================================================================================
+RESPONSIVE
+====================================================================================================*/
+@media (max-width: 1600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 18px;
+  }
+  .container {
+    width: 80vw;
+  }
+}
