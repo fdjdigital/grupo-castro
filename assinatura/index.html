@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Gerador de Assinatura de E-mail | Grupo Castro</title>
 <link rel="icon" type="image/webp" href="../img/favicon.webp">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -49,8 +49,14 @@
   <!-- PREVIEW -->
   <section class="preview-section">
     <h2>2. Confira a pr&eacute;via</h2>
-    <div class="preview-box" id="preview-box">
-      <!-- A assinatura e gerada pelo JS -->
+    <div class="preview-wrapper">
+      <div class="preview-box" id="preview-box">
+        <!-- A assinatura e gerada pelo JS -->
+      </div>
+      <div class="scroll-hint" id="scroll-hint">
+        <span>Arraste para ver a assinatura completa</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="#0050c7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
     </div>
     <button class="btn-copy" id="btn-copy" onclick="copiarAssinatura()">Copiar Assinatura</button>
     <span class="copy-feedback" id="copy-feedback">Copiado!</span>
@@ -210,6 +216,6 @@
 
 </div>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>

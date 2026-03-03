@@ -66,6 +66,7 @@ function gerarAssinatura() {
     + '</p></td></tr></table>';
 
   document.getElementById('preview-box').innerHTML = html;
+  verificarScroll();
 }
 
 function escapeHTML(str) {
@@ -135,6 +136,31 @@ function trocarTutorial(tipo) {
   var idx = tipo === 'webmail' ? 0 : 1;
   btns[idx].classList.add('active');
 }
+
+// Dica de scroll horizontal na previa
+function verificarScroll() {
+  var box = document.getElementById('preview-box');
+  var hint = document.getElementById('scroll-hint');
+  if (!box || !hint) return;
+  if (box.scrollWidth > box.clientWidth + 4) {
+    hint.classList.add('visible');
+  } else {
+    hint.classList.remove('visible');
+  }
+}
+
+var previewBox = document.getElementById('preview-box');
+if (previewBox) {
+  previewBox.addEventListener('scroll', function() {
+    var hint = document.getElementById('scroll-hint');
+    if (!hint) return;
+    if (previewBox.scrollLeft + previewBox.clientWidth >= previewBox.scrollWidth - 8) {
+      hint.classList.remove('visible');
+    }
+  });
+}
+
+window.addEventListener('resize', verificarScroll);
 
 // Atualizar preview em tempo real
 campos.forEach(function(id) {
