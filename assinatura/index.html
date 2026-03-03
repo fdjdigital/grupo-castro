@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Gerador de Assinatura de E-mail | Grupo Castro</title>
+<link rel="icon" type="image/webp" href="../img/favicon.webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <img src="https://bygrupocastro.com.br/img/icon/logo_light.svg" alt="Grupo Castro" class="header-logo">
+    <h1>Gerador de Assinatura de E-mail</h1>
+    <p class="subtitle">Preencha seus dados, copie a assinatura e cole no seu e-mail.</p>
+  </header>
+
+  <!-- FORMULARIO -->
+  <section class="form-section">
+    <h2>1. Preencha seus dados</h2>
+    <div class="form-grid">
+      <div class="field">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" placeholder="Ex: Cibele de Oliveira Alves" value="Cibele de Oliveira Alves">
+      </div>
+      <div class="field">
+        <label for="setor">Setor</label>
+        <input type="text" id="setor" placeholder="Ex: Fiscal" value="Fiscal">
+      </div>
+      <div class="field">
+        <label for="whatsapp">WhatsApp</label>
+        <input type="text" id="whatsapp" placeholder="Ex: (54) 99905-0128" value="(54) 99905-0128">
+      </div>
+      <div class="field">
+        <label for="telefone">Telefone fixo</label>
+        <input type="text" id="telefone" placeholder="Ex: (54) 3464-0021" value="(54) 3464-0021">
+      </div>
+      <div class="field field-full">
+        <label for="email">E-mail</label>
+        <input type="text" id="email" placeholder="Ex: fiscal6sjc@bygrupocastro.com.br" value="fiscal6sjc@bygrupocastro.com.br">
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW -->
+  <section class="preview-section">
+    <h2>2. Confira a pr&eacute;via</h2>
+    <div class="preview-box" id="preview-box">
+      <!-- A assinatura e gerada pelo JS -->
+    </div>
+    <button class="btn-copy" id="btn-copy" onclick="copiarAssinatura()">Copiar Assinatura</button>
+    <span class="copy-feedback" id="copy-feedback">Copiado!</span>
+  </section>
+
+  <!-- TUTORIAL -->
+  <section class="tutorial-section">
+    <h2>3. Como configurar no seu e-mail</h2>
+    <p class="tutorial-intro">Siga o passo a passo abaixo para configurar a assinatura no Webmail da HostGator (Roundcube).</p>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Acesse o Webmail</h3>
+          <p>Abra o navegador e acesse:</p>
+          <div class="code-box">https://bygrupocastro.com.br:2096</div>
+          <p>Fa&ccedil;a login com seu <strong>e-mail completo</strong> e <strong>senha</strong>.</p>
+          <p class="tip">Se aparecer op&ccedil;&atilde;o de escolha, selecione <strong>Roundcube</strong>.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Abra as Configura&ccedil;&otilde;es</h3>
+          <p>No canto superior direito, clique em <strong>Settings</strong> (ou <strong>Configura&ccedil;&otilde;es</strong>).</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>V&aacute; em Identidades</h3>
+          <p>No menu lateral esquerdo, clique em <strong>Identities</strong> (ou <strong>Identidades</strong>).</p>
+          <p>Depois clique no seu <strong>endere&ccedil;o de e-mail</strong> que aparece na lista.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Ative a assinatura HTML</h3>
+          <p>Role a p&aacute;gina at&eacute; encontrar o campo <strong>Signature</strong> (Assinatura).</p>
+          <p>Marque a op&ccedil;&atilde;o <strong>&ldquo;HTML signature&rdquo;</strong> (Assinatura HTML).</p>
+          <p class="tip">Isso &eacute; obrigat&oacute;rio para que as cores, &iacute;cones e layout funcionem.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3>Cole a assinatura</h3>
+          <p>Volte a esta p&aacute;gina e clique no bot&atilde;o <strong>&ldquo;Copiar Assinatura&rdquo;</strong> acima.</p>
+          <p>No Roundcube, clique dentro do campo de assinatura e cole com <strong>Ctrl+V</strong> (ou <strong>Cmd+V</strong> no Mac).</p>
+          <p class="tip">Se a assinatura n&atilde;o aparecer formatada, procure um bot&atilde;o <strong>&ldquo;Source&rdquo;</strong> ou <strong>&ldquo;&lt;/&gt;&rdquo;</strong> no editor para colar o c&oacute;digo HTML diretamente.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <h3>Salve</h3>
+          <p>Clique em <strong>Save</strong> (Salvar) no canto inferior.</p>
+          <p>Pronto! A assinatura vai aparecer automaticamente em todos os novos e-mails.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="extra-tip">
+      <h3>Dica extra: Ativar composi&ccedil;&atilde;o em HTML</h3>
+      <p>Para garantir que seus e-mails sempre enviem a assinatura formatada:</p>
+      <ol>
+        <li>V&aacute; em <strong>Settings</strong> &rarr; <strong>Preferences</strong> (Prefer&ecirc;ncias) &rarr; <strong>Composing Messages</strong></li>
+        <li>Em <strong>&ldquo;Compose HTML messages&rdquo;</strong>, selecione <strong>&ldquo;always&rdquo;</strong></li>
+        <li>Clique em <strong>Save</strong></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Desenvolvido por <a href="https://vanttmkt.com" target="_blank">vanttmkt.com</a></p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

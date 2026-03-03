@@ -1,0 +1,260 @@
+/* Gerador de Assinatura - Grupo Castro */
+/* Cores da marca: Azul Petroleo #112e3f | Azul Royal #0050c7 | Grafite #4c4c4c */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Calibri, 'Segoe UI', Arial, Helvetica, sans-serif;
+  background: #f4f5f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 26px;
+  color: #112e3f;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #666;
+}
+
+/* Sections */
+section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 28px 28px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+h2 {
+  font-size: 18px;
+  color: #112e3f;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e8eaed;
+}
+
+/* Form */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field-full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  color: #333;
+  transition: border-color 0.2s;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #0050c7;
+  box-shadow: 0 0 0 3px rgba(0,80,199,0.1);
+}
+
+/* Preview */
+.preview-box {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.btn-copy {
+  display: inline-block;
+  background: #0050c7;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-copy:hover {
+  background: #003d99;
+}
+
+.btn-copy:active {
+  transform: scale(0.98);
+}
+
+.copy-feedback {
+  display: none;
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.copy-feedback.show {
+  display: inline;
+}
+
+/* Tutorial */
+.tutorial-intro {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: #112e3f;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.step-content h3 {
+  font-size: 16px;
+  color: #112e3f;
+  margin-bottom: 4px;
+}
+
+.step-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.code-box {
+  display: inline-block;
+  background: #112e3f;
+  color: #5ba3d9;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin: 6px 0 8px;
+  word-break: break-all;
+}
+
+.tip {
+  background: #f0f7ff;
+  border-left: 3px solid #0050c7;
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  font-size: 13px;
+  color: #0050c7;
+  margin-top: 6px;
+}
+
+/* Extra tip */
+.extra-tip {
+  background: #f8f9fa;
+  border: 1px solid #e8eaed;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.extra-tip h3 {
+  font-size: 15px;
+  color: #112e3f;
+  margin-bottom: 8px;
+}
+
+.extra-tip p, .extra-tip li {
+  font-size: 14px;
+  color: #555;
+}
+
+.extra-tip ol {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.extra-tip li {
+  margin-bottom: 4px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px 0 0;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #999;
+}
+
+.footer a {
+  color: #0050c7;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container { padding: 20px 14px 32px; }
+  section { padding: 20px 18px 24px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .header h1 { font-size: 22px; }
+  .preview-box { padding: 16px; }
+  .step { gap: 12px; }
+  .step-number { width: 30px; height: 30px; font-size: 14px; }
+}
